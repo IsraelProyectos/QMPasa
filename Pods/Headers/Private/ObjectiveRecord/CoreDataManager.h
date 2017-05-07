@@ -1,0 +1,5 @@
+XSym
+0050
+91b5cf5dee1163fef2e33679e8b5716a
+../../../ObjectiveRecord/Classes/CoreDataManager.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

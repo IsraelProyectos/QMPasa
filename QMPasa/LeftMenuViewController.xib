@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftMenuViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QMPasa?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh5-EV-WZj">
+                    <rect key="frame" x="30" y="54" width="73" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYa-gA-PTc">
+                    <rect key="frame" x="30" y="117" width="44" height="40"/>
+                    <state key="normal" image="leftMenuReset"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98431372549019602" green="0.4392156862745098" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="GYa-gA-PTc" firstAttribute="leading" secondItem="sh5-EV-WZj" secondAttribute="leading" id="4hA-HY-TPL"/>
+                <constraint firstItem="sh5-EV-WZj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="4nU-9F-bhe"/>
+                <constraint firstItem="GYa-gA-PTc" firstAttribute="top" secondItem="sh5-EV-WZj" secondAttribute="bottom" constant="42" id="6jm-BD-9gx"/>
+                <constraint firstItem="sh5-EV-WZj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="54" id="cM4-Yn-YGa"/>
+            </constraints>
+            <point key="canvasLocation" x="493" y="452"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="leftMenuReset" width="44" height="40"/>
+    </resources>
+</document>

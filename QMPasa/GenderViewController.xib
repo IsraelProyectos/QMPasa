@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenderViewController">
+            <connections>
+                <outlet property="btnFemale" destination="XIg-4g-SJO" id="Rw8-eY-nsP"/>
+                <outlet property="btnMale" destination="GHX-tf-hpp" id="xaX-Qi-23v"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIg-4g-SJO">
+                    <rect key="frame" x="0.0" y="303" width="600" height="297"/>
+                    <color key="backgroundColor" red="0.80784313730000001" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="genderFemale">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnFemalePressed:" destination="-1" eventType="touchUpInside" id="Q2b-g6-ZKb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHX-tf-hpp">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="297"/>
+                    <color key="backgroundColor" red="0.80784313730000001" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="genderMale">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnMalePressed:" destination="-1" eventType="touchUpInside" id="uiB-Cv-5pE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XIg-4g-SJO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.495" id="ExN-ta-gvs"/>
+                <constraint firstItem="XIg-4g-SJO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MqJ-ZJ-bVP"/>
+                <constraint firstItem="GHX-tf-hpp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U9G-GH-Pq3"/>
+                <constraint firstItem="XIg-4g-SJO" firstAttribute="top" secondItem="GHX-tf-hpp" secondAttribute="bottom" id="USB-fm-8xD"/>
+                <constraint firstAttribute="trailing" secondItem="XIg-4g-SJO" secondAttribute="trailing" id="V67-UM-qLB"/>
+                <constraint firstAttribute="bottom" secondItem="XIg-4g-SJO" secondAttribute="bottom" id="nvk-Zc-Wm8"/>
+                <constraint firstItem="GHX-tf-hpp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uBh-en-HWl"/>
+                <constraint firstAttribute="trailing" secondItem="GHX-tf-hpp" secondAttribute="trailing" id="wC6-j1-xMN"/>
+                <constraint firstItem="GHX-tf-hpp" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.495" id="ws0-QB-p99"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="USB-fm-8xD"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="491" y="327"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="genderFemale" width="74" height="255"/>
+        <image name="genderMale" width="76" height="260"/>
+    </resources>
+</document>

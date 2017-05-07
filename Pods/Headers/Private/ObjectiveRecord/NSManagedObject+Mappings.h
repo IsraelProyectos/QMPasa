@@ -1,0 +1,5 @@
+XSym
+0059
+58bfa16b7ed3a01d13eec86591a58fcd
+../../../ObjectiveRecord/Classes/NSManagedObject+Mappings.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

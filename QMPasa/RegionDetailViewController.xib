@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegionDetailViewController">
+            <connections>
+                <outlet property="infiniteScrollView" destination="1Ba-nq-BIn" id="MF8-Ni-hMU"/>
+                <outlet property="pageControl" destination="wX0-k1-nnc" id="QTE-c9-PDY"/>
+                <outlet property="regionsScrollView" destination="w9F-Fv-JVm" id="btg-7j-9KC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9F-Fv-JVm">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ba-nq-BIn" customClass="NBInfiniteScrollView">
+                    <rect key="frame" x="0.0" y="480" width="600" height="120"/>
+                    <color key="backgroundColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="1" translatesAutoresizingMaskIntoConstraints="NO" id="wX0-k1-nnc">
+                    <rect key="frame" x="297" y="480" width="7" height="37"/>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdc-qO-kKf">
+                    <rect key="frame" x="533" y="23" width="44" height="40"/>
+                    <state key="normal" image="rootDone"/>
+                    <connections>
+                        <action selector="btnDonePressed:" destination="-1" eventType="touchUpInside" id="oSw-qH-DWk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.80784313730000001" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wX0-k1-nnc" firstAttribute="centerX" secondItem="1Ba-nq-BIn" secondAttribute="centerX" id="0xg-fv-Vbw"/>
+                <constraint firstItem="w9F-Fv-JVm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DiL-Io-1f1"/>
+                <constraint firstItem="1Ba-nq-BIn" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.2" id="GK8-Yg-oAx"/>
+                <constraint firstItem="w9F-Fv-JVm" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.8" id="IUq-1o-0hL"/>
+                <constraint firstAttribute="trailing" secondItem="1Ba-nq-BIn" secondAttribute="trailing" id="M65-1r-w08"/>
+                <constraint firstAttribute="trailing" secondItem="rdc-qO-kKf" secondAttribute="trailing" constant="23" id="T2N-VK-axe"/>
+                <constraint firstAttribute="bottom" secondItem="1Ba-nq-BIn" secondAttribute="bottom" id="VZe-6e-Jkc"/>
+                <constraint firstItem="1Ba-nq-BIn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XLx-In-AGr"/>
+                <constraint firstAttribute="trailing" secondItem="w9F-Fv-JVm" secondAttribute="trailing" id="aHj-JS-1Ce"/>
+                <constraint firstItem="wX0-k1-nnc" firstAttribute="top" secondItem="w9F-Fv-JVm" secondAttribute="bottom" id="ai5-b1-ZDO"/>
+                <constraint firstItem="rdc-qO-kKf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="23" id="grY-It-OjX"/>
+                <constraint firstItem="w9F-Fv-JVm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rr0-Rb-tGp"/>
+            </constraints>
+            <point key="canvasLocation" x="507" y="420"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rootDone" width="44" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,5 @@
+XSym
+0063
+b93b919c467e8a91417cadc974a44b93
+../../../ObjectiveRecord/Classes/NSManagedObject+ActiveRecord.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

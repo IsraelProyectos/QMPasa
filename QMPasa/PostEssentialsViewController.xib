@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostEssentialsViewController">
+            <connections>
+                <outlet property="btnDone" destination="1Cz-YK-6Gr" id="p40-KZ-eE1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cz-YK-6Gr" customClass="ButtonDone">
+                    <rect key="frame" x="556" y="0.0" width="44" height="40"/>
+                    <state key="normal" image="rootDone"/>
+                    <connections>
+                        <action selector="btnDonePressed:" destination="-1" eventType="touchUpInside" id="orf-i3-EZv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.80784313730000001" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="1Cz-YK-6Gr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K73-Rs-f7Y"/>
+                <constraint firstAttribute="trailing" secondItem="1Cz-YK-6Gr" secondAttribute="trailing" id="aB8-2V-dx3"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="rootDone" width="44" height="40"/>
+    </resources>
+</document>

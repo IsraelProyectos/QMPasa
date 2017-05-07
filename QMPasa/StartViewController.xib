@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="X6K-Kg-Xoj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startHenry" translatesAutoresizingMaskIntoConstraints="NO" id="yR2-Bk-70e">
+                    <rect key="frame" x="225" y="77" width="151" height="446"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpd-KD-U17">
+                    <rect key="frame" x="226" y="226" width="148" height="148"/>
+                    <state key="normal" image="startProcess"/>
+                    <connections>
+                        <action selector="btnStartPressed:" destination="-1" eventType="touchUpInside" id="XQs-tB-Tmn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.80784313725490198" green="0.81176470588235294" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Mpd-KD-U17" firstAttribute="centerX" secondItem="yR2-Bk-70e" secondAttribute="centerX" id="FPi-21-yZy"/>
+                <constraint firstItem="yR2-Bk-70e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YHk-Bk-4wc"/>
+                <constraint firstItem="Mpd-KD-U17" firstAttribute="centerY" secondItem="yR2-Bk-70e" secondAttribute="centerY" id="ge3-tm-DSb"/>
+                <constraint firstItem="yR2-Bk-70e" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sNg-Ut-9NV"/>
+            </constraints>
+            <point key="canvasLocation" x="455" y="423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="startHenry" width="151" height="446"/>
+        <image name="startProcess" width="148" height="148"/>
+    </resources>
+</document>

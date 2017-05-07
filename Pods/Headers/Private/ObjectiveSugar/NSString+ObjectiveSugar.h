@@ -1,0 +1,5 @@
+XSym
+0057
+3665a3f5bc91975a72bedd8bc0cb7273
+../../../ObjectiveSugar/Classes/NSString+ObjectiveSugar.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
